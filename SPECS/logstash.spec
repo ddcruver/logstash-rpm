@@ -107,7 +107,7 @@ fi
 # create logstash user
 if ! getent passwd logstash >/dev/null; then
         useradd -r -g logstash -d %{_javadir}/%{name} \
-            -s /sbin/nologin -c "You know, for search" logstash
+            -s /sbin/nologin -c "Logstash Service User" logstash
 fi
 
 %post
